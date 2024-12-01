@@ -77,7 +77,7 @@ This project was inspired by the need for a simple and user-friendly UPI Receipt
 
 ### ☕ BUY ME A COFFEE
 - [PayPal](https://paypal.me/RahulReviews)
-- [UPI](https://codexbots.github.io/Donate)
+- [UPI](https://TechifyBots.github.io/Donate)
 
 ### 📌 NOTE
 
