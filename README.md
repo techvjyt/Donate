@@ -27,7 +27,7 @@ Want to create a similar project? Follow these steps to build your own UPI Payme
 
 1. **Clone the Repository:** Begin by cloning this repository to your local machine using the following command:
    ```sh
-   git clone https://github.com/CodeXBots/UPI.git
+   git clone https://github.com/TechifyBots/UPI.git
    ```
 
 2. **Navigate to the Project Directory:** Move into the project directory:
@@ -51,7 +51,7 @@ Want to create a similar project? Follow these steps to build your own UPI Payme
 <div align='center'>
 
 > [!NOTE]
-> *Attribution to this [Donate Page](https://codexbots.github.io/Donate) project are appreciated.*
+> *Attribution to this [Donate Page](https://TechifyBots.github.io/Donate) project are appreciated.*
 </div>
 </details>
 
@@ -64,7 +64,7 @@ This project was inspired by the need for a simple and user-friendly UPI Receipt
 <details><summary>Tap On Me For Credit</summary>
 
 
-💝 Credit Goes To [CodeXBots](https://github.com/CodeXBots)
+💝 Credit Goes To [TechifyBots](https://github.com/TechifyBots)
 
 💘 Base Repo Credit [Inulute](https://github.com/inulute)
 
@@ -73,7 +73,7 @@ This project was inspired by the need for a simple and user-friendly UPI Receipt
 
 ### 💕 CONTACT DEVELOPER
 
-- [Rahul](https://telegram.me/CodeXBro)
+- [Rahul](https://telegram.me/TechifySupport)
 
 ### ☕ BUY ME A COFFEE
 - [PayPal](https://paypal.me/RahulReviews)
