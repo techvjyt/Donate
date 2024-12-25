@@ -76,7 +76,7 @@ This project was inspired by the need for a simple and user-friendly UPI Receipt
 - [Rahul](https://telegram.me/TechifySupport)
 
 ### ☕ BUY ME A COFFEE
-- [PayPal](https://paypal.me/RahulReviews)
+- [PayPal](https://www.paypal.me/TechifyBots)
 - [UPI](https://TechifyBots.github.io/Donate)
 
 ### 📌 NOTE
