@@ -45,7 +45,7 @@
             <div class="payment-info">
                 <p id="qr-text">Scan the QR code or use the UPI ID:</p>
                 <div class="upi-id-content">
-                    <strong id="payment-id">RahulReviews@UPI</strong>
+                    <strong id="payment-id">TechifyBots@UPI</strong>
                     <button id="payment-button" class="copy-button">Copy</button>
                     <lottie-player 
                         id="upi-animation"
@@ -88,7 +88,7 @@
                 };
 
                 qrImage.src = "assets/paypal_qr.png"; // Replace with your PayPal QR code image
-                paymentId.textContent = "RahulReviews"; // Replace with your PayPal ID
+                paymentId.textContent = "TechifyBots"; // Replace with your PayPal ID
                 paymentButton.textContent = "Open PayPal";
                 paymentButton.removeEventListener("click", copyUpiId);
                 paymentButton.addEventListener("click", openPayPalLink);
@@ -108,7 +108,7 @@
                 };
 
                 qrImage.src = "assets/qr-code.png"; // Replace with your UPI QR code image
-                paymentId.textContent = "RahulReviews@UPI"; // Replace with your UPI ID
+                paymentId.textContent = "TechifyBots@UPI"; // Replace with your UPI ID
                 paymentButton.textContent = "Copy";
                 paymentButton.removeEventListener("click", openPayPalLink);
                 paymentButton.addEventListener("click", copyUpiId);
@@ -134,7 +134,7 @@
 
             // Function to open PayPal link
             function openPayPalLink() {
-                window.open("https://www.paypal.com/paypalme/RahulReviews", "_blank");
+                window.open("https://www.paypal.com/paypalme/TechifyBots", "_blank");
             }
 
             // Toggle between UPI and PayPal when the link is clicked
