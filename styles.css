@@ -92,7 +92,7 @@ body {
 }
 
 #watermark::after {
-    content: "Made by Rahul";
+    content: "Made By Tech VJ";
     position: fixed;
     bottom: 0;
     right: 0;
