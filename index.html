@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="assets/logo.svg" type="image/x-icon" />
+    <link rel="icon" href="https://envs.sh/Go-.jpg" type="image/x-icon" />
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <title>Techify Bots</title>
     <style>
@@ -40,12 +40,12 @@
                 <p>Loading...</p>
             </div>
             <div class="qr-code"> 
-                <img id="qr-image" src="assets/qr-code.png" alt="UPI QR Code">
+                <img id="qr-image" src="https://envs.sh/sHE.jpg" alt="UPI QR Code">
             </div>
             <div class="payment-info">
                 <p id="qr-text">Scan the QR code or use the UPI ID:</p>
                 <div class="upi-id-content">
-                    <strong id="payment-id">TechifyBots@UPI</strong>
+                    <strong id="payment-id">jivshn@okaxis</strong>
                     <button id="payment-button" class="copy-button">Copy</button>
                     <lottie-player 
                         id="upi-animation"
@@ -60,8 +60,6 @@
                     ></lottie-player>
                 </div>
             </div>
-            <!-- Toggle between UPI and PayPal -->
-            <a id="toggle-link" href="#" class="toggle-payment">Donate via PayPal? Click Here</a>
         </div>
     </div>
 
@@ -87,9 +85,9 @@
                     qrImage.style.display = "block"; // Show QR image
                 };
 
-                qrImage.src = "assets/paypal_qr.png"; // Replace with your PayPal QR code image
-                paymentId.textContent = "TechifyBots"; // Replace with your PayPal ID
-                paymentButton.textContent = "Open PayPal";
+                qrImage.src = "https://envs.sh/sHE.jpg"; // Replace with your PayPal QR code image
+                paymentId.textContent = "jivshn@okaxis"; // Replace with your PayPal ID
+                paymentButton.textContent = "Open Upi";
                 paymentButton.removeEventListener("click", copyUpiId);
                 paymentButton.addEventListener("click", openPayPalLink);
                 toggleLink.textContent = "Donate via UPI? Click Here";
@@ -107,8 +105,8 @@
                     qrImage.style.display = "block"; // Show QR image
                 };
 
-                qrImage.src = "assets/qr-code.png"; // Replace with your UPI QR code image
-                paymentId.textContent = "TechifyBots@UPI"; // Replace with your UPI ID
+                qrImage.src = "https://envs.sh/sHE.jpg"; // Replace with your UPI QR code image
+                paymentId.textContent = "jivshn@okaxis"; // Replace with your UPI ID
                 paymentButton.textContent = "Copy";
                 paymentButton.removeEventListener("click", openPayPalLink);
                 paymentButton.addEventListener("click", copyUpiId);
@@ -134,7 +132,7 @@
 
             // Function to open PayPal link
             function openPayPalLink() {
-                window.open("https://www.paypal.me/TechifyBots", "_blank");
+                window.open("https://www.paypal.me/VJBots", "_blank");
             }
 
             // Toggle between UPI and PayPal when the link is clicked
