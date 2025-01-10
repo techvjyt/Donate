@@ -108,12 +108,10 @@
                 qrImage.src = "https://envs.sh/sHE.jpg"; // Replace with your UPI QR code image
                 paymentId.textContent = "jivshn@okaxis"; // Replace with your UPI ID
                 paymentButton.textContent = "Copy";
-                paymentButton.removeEventListener("click", openPayPalLink);
                 paymentButton.addEventListener("click", copyUpiId);
-                toggleLink.textContent = "Donate via PayPal? Click Here";
                 upiAnimation.style.display = "block";
                 qrText.textContent = "Scan the QR code or use the UPI ID:";
-                isUpi = true;
+                isUpi = false;
             }
 
             // Function to copy UPI ID
@@ -130,16 +128,11 @@
                 }, 2500);
             }
 
-            // Function to open PayPal link
-            function openPayPalLink() {
-                window.open("https://www.paypal.me/VJBots", "_blank");
-            }
-
             // Toggle between UPI and PayPal when the link is clicked
             toggleLink.addEventListener("click", function (e) {
                 e.preventDefault();
                 if (isUpi) {
-                    switchToPayPal();
+                    switchToUpi();
                 } else {
                     switchToUpi();
                 }
