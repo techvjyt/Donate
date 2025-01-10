@@ -65,39 +65,39 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-    const toggleLink = document.getElementById("toggle-link");
-    const qrImage = document.getElementById("qr-image");
-    const paymentId = document.getElementById("payment-id");
-    const paymentButton = document.getElementById("payment-button");
-    const upiAnimation = document.getElementById("upi-animation");
-    const qrText = document.getElementById("qr-text");
-    const loadingContainer = document.querySelector(".loading-container");
+            const toggleLink = document.getElementById("toggle-link");
+            const qrImage = document.getElementById("qr-image");
+            const paymentId = document.getElementById("payment-id");
+            const paymentButton = document.getElementById("payment-button");
+            const upiAnimation = document.getElementById("upi-animation");
+            const qrText = document.getElementById("qr-text");
+            const loadingContainer = document.querySelector(".loading-container");
 
-    // Function to copy UPI ID
-    function copyUpiId() {
-        const tempInput = document.createElement("input");
-        tempInput.value = paymentId.textContent;
-        document.body.appendChild(tempInput);
-        tempInput.select();
-        document.execCommand("copy");
-        document.body.removeChild(tempInput);
-        paymentButton.textContent = "Copied!";
-        setTimeout(function () {
-            paymentButton.textContent = "Copy";
-        }, 2500);
-    }
+            // Function to copy UPI ID
+            function copyUpiId() {
+                const tempInput = document.createElement("input");
+                tempInput.value = paymentId.textContent;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand("copy");
+                document.body.removeChild(tempInput);
+                paymentButton.textContent = "Copied!";
+                setTimeout(function () {
+                    paymentButton.textContent = "Copy";
+                }, 2500);
+            }
 
-    // Add the copy functionality for UPI by default
-    paymentButton.addEventListener("click", function (event) {
-        event.preventDefault(); // Prevent default action
-        copyUpiId(); // Call the copy function
-    });
+            // Add the copy functionality for UPI by default
+            paymentButton.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent default action
+                copyUpiId(); // Call the copy function
+            });
 
-    // Prevent context menu from appearing
-    document.addEventListener("contextmenu", function (event) {
-        event.preventDefault();
-    });
-});
+            // Prevent context menu from appearing
+            document.addEventListener("contextmenu", function (event) {
+                 event.preventDefault();
+            });
+        });
         (function() {
             const message = String.fromCharCode(77, 97, 100, 101, 32, 119, 105, 116, 104, 32, 128149, 32, 98, 121, 32, 73, 110, 117, 108, 117, 116, 101);
             console.log(message);
