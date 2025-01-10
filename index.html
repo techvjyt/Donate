@@ -73,47 +73,6 @@
             const qrText = document.getElementById("qr-text");
             const loadingContainer = document.querySelector(".loading-container");
 
-            let isUpi = true;
-
-            // Function to switch to PayPal
-            function switchToPayPal() {
-                loadingContainer.style.display = "block"; // Show loading spinner
-                qrImage.style.display = "none"; // Hide QR image
-
-                qrImage.onload = function() {
-                    loadingContainer.style.display = "none"; // Hide loading spinner
-                    qrImage.style.display = "block"; // Show QR image
-                };
-
-                qrImage.src = "https://envs.sh/sHE.jpg"; // Replace with your PayPal QR code image
-                paymentId.textContent = "jivshn@okaxis"; // Replace with your PayPal ID
-                paymentButton.textContent = "Open Upi";
-                paymentButton.removeEventListener("click", copyUpiId);
-                paymentButton.addEventListener("click", openPayPalLink);
-                toggleLink.textContent = "Donate via UPI? Click Here";
-                upiAnimation.style.display = "none";
-                qrText.textContent = "Scan with any QR scanning app or use the button";
-                isUpi = false;
-            }
-
-            // Function to switch to UPI
-            function switchToUpi() {
-                qrImage.style.display = "none"; // Hide QR image
-                loadingContainer.style.display = "none"; // Hide loading spinner
-
-                qrImage.onload = function() {
-                    qrImage.style.display = "block"; // Show QR image
-                };
-
-                qrImage.src = "https://envs.sh/sHE.jpg"; // Replace with your UPI QR code image
-                paymentId.textContent = "jivshn@okaxis"; // Replace with your UPI ID
-                paymentButton.textContent = "Copy";
-                paymentButton.addEventListener("click", copyUpiId);
-                upiAnimation.style.display = "block";
-                qrText.textContent = "Scan the QR code or use the UPI ID:";
-                isUpi = false;
-            }
-
             // Function to copy UPI ID
             function copyUpiId() {
                 const tempInput = document.createElement("input");
@@ -128,18 +87,9 @@
                 }, 2500);
             }
 
-            // Toggle between UPI and PayPal when the link is clicked
-            toggleLink.addEventListener("click", function (e) {
-                e.preventDefault();
-                if (isUpi) {
-                    switchToUpi();
-                } else {
-                    switchToUpi();
-                }
-            });
-
             // Add the copy functionality for UPI by default
-            paymentButton.addEventListener("click", copyUpiId);
+            paymentButton.addEventListener("click", function (copyUpiId) {
+                event.preventDefault();
 
             document.addEventListener("contextmenu", function (event) {
                 event.preventDefault();
